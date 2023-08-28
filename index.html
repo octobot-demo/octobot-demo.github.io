@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			/* body, html {
+				height: 100%;
+				overflow: hidden;
+			} */
+		</style>
+	</head>
+	<body>
+
+<!-- 
+		<script>
+			let isUserScrolling = false;
+		
+			const scrollContainer = document.getElementById('scrollContainer');
+		
+			// Function to handle the scroll event
+			function handleScroll(event) {
+				if (isUserScrolling) {
+				// Allow scrolling for user-triggered events
+				isUserScrolling = false; // Reset flag
+				} else {
+				// Disable autoscrolling
+				event.preventDefault();
+				event.stopPropagation();
+				scrollContainer.scrollTop = 0; // Prevent autoscrolling by resetting scroll position
+				}
+			}
+		
+			// Attach event listener to the scroll container
+			scrollContainer.addEventListener('scroll', handleScroll);
+		
+			// Detect user-initiated scroll
+			scrollContainer.addEventListener('wheel', function(event) {
+				isUserScrolling = true;
+			});
+		</script> -->
+
+
+		<h3>William-Gray (Home Page)</h3>
+		<div>
+			<!-- <script type="text/javascript">
+				function toggle(elementId) {
+					var element = document.getElementById(elementId);
+					if (element.style.display === "none") {
+						element.style.display = "block";
+					} else {
+						element.style.display = "none";
+					}
+				}
+			</script>
+			<div style="background-color: rgb(63, 114, 175); width: 100%; max-width:600px; height: 40px; border-radius: 10px 10px 0 0; text-align: right;">
+				<button style="padding: 5px; background-color: rgb(230, 230, 230); border-radius: 5px; margin: 5px;" onclick="toggle('cChatbotFrame-WilliamGrayInfo')">x</button>
+			</div> -->
+			<iframe id="cChatbotFrame-WilliamGrayInfo" style="border-radius: 10px 10px 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://chatbot-v1-beta.vercel.app/no-scroll-william-gray-info"></iframe>
+		</div>
+		<br><br>
+		<h3>OctoBot Info</h3>
+		<div>
+			<!-- <script type="text/javascript">
+				function toggle(elementId) {
+					var element = document.getElementById(elementId);
+					if (element.style.display === "none") {
+						element.style.display = "block";
+					} else {
+						element.style.display = "none";
+					}
+				}
+			</script>
+			<div style="background-color: rgb(63, 114, 175); width: 100%; max-width:600px; height: 40px; border-radius: 10px 10px 0 0; text-align: right;">
+				<button style="padding: 5px; background-color: rgb(230, 230, 230); border-radius: 5px; margin: 5px;" onclick="toggle('cChatbotFrame-OctobotInfo')">x</button>
+			</div> -->
+			<iframe id="cChatbotFrame-OctobotInfo" style="border-radius: 10px 10px 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://chatbot-v1-beta.vercel.app/no-scroll-octobot-info"></iframe>
+		</div>	
+	</body>
+</html>
