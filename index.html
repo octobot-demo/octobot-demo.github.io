@@ -8,7 +8,7 @@
 		<style>
 
 			body {
-				background-color: aliceblue;
+				background-color: rgb(240,237,230);
 			}
 
 			#cFrame {
@@ -17,12 +17,59 @@
 				position: fixed;
 				bottom: 10px;
 				right: 3%;
-				box-shadow: 0px 0px 20px rgb(150, 150, 150);
+				box-shadow: 0px 0px 25px rgb(100, 100, 100);
 				border-radius: 10px 10px 10px 10px;
 			}
 
 			#cCloseButton {
 				margin: 5px;
+			}
+
+			#cTop {
+				background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./static/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+				height: 800px;
+				width: 100%;
+				background-position: left, right;
+				background-size: cover;
+				background-repeat: no-repeat, no-repeat;
+				font-style: italic;
+				color: white;
+				text-shadow: 0px 0px 10px black;
+				text-align: center;
+				padding: 100px;
+				font-size: xxx-large;
+				font-family: Baskerville;
+			}
+
+			#cMainText {
+				padding-top: 3%;
+				padding-left: 10%;
+				padding-right: 30%;
+
+				font-family: Baskerville;
+				font-size: large;
+				color: rgb(147,128,115);
+			}
+
+			#cMainText h3 {
+				font-size: xx-large;
+				padding-top: 3%;
+				padding-bottom: 5%;
+			}
+
+			#cMainText p {
+				padding-bottom: 3%;
+			}
+
+			#cTextTop {
+				font-family: Arial, Helvetica, sans-serif;
+				font-style: normal;
+				font-size: medium;
+			}
+
+			#cTextBottom {
+				font-style: normal;
+				font-size: x-large;
 			}
 
 		</style>
@@ -32,26 +79,68 @@
 	</head>
 	<body>
 
-		<h1>Hotel</h1>
+
 
 		<div>
-			<script type="text/javascript">
-				function toggle(elementId) {
-					var element = document.getElementById(elementId);
-					if (element.style.display === "none") {
-						element.style.display = "block";
-					} else {
-						element.style.display = "none";
-					}
-				}
-			</script>
-			<div id="cFrame">
-				<div onclick="toggle('cChatbotFrame-WilliamGrayInfo')" style="background-color: rgb(63, 114, 175); width: 100%; max-width:600px; height: 50px; border-radius: 10px 10px 0 0; text-align: right;">
-					<button id="cCloseButton" class="bg-transparent text-white font-bold py-2 px-4 rounded">x</button>
-				</div>
-				<iframe id="cChatbotFrame-WilliamGrayInfo" style="border-radius: 0 0 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://chatbot-v1-beta.vercel.app/"></iframe>	
+
+			<div id="cTop">
+
+				<span id="cTextTop">DISCOVER</span><br/>
+				<span>Exceptional Experiences.</span><br/>
+				<span id="cTextBottom">- Bistro. -</span>
+
 			</div>
+
+			<div id="cMainText">
+				<h3>Discover Amazing Experiences</h3>
+				<p>Nestled within our vibrant town, the exquisite local gem, "Bistro," is an oasis for discerning palates seeking an unforgettable dining affair. Renowned for its impeccable fine dining offerings and an ambiance that weaves magic, Bistro is more than a restaurant – it's an enchanting experience.</p>
+				<p>Upon stepping through its doors, guests are transported into a realm of culinary delight and refined elegance. The soft glow of chandeliers casts a warm embrace, setting the stage for a culinary journey unlike any other. The menu, a symphony of flavors meticulously crafted by the talented chef, showcases a fusion of local ingredients and global inspirations. Each dish is a masterpiece, plated with precision and infused with creativity that tantalizes taste buds.</p>
+				<p>The experience is orchestrated by a dedicated staff who understand that dining is an art. Attentive yet unobtrusive, they ensure that every guest's desire is met with grace. Be it an intimate dinner for two or a celebratory gathering, Bistro accommodates every occasion flawlessly.</p>	
+				<p>In the heart of our community, Bistro isn't just a place to savor extraordinary cuisine; it's a destination where moments turn into cherished memories. For those seeking not just a meal, but an unparalleled experience, Bistro stands as a testament to the beauty of gastronomy and ambiance intertwined.</p>						
+
+				<h3>Our Story</h3>
+
+				<p>Embark on a culinary journey that weaves together passion, tradition, and innovation at "Bistro," a restaurant born from a dream that has evolved into a captivating reality.</p>
+
+				<p>Founded by Chef X, a visionary with a profound love for both heritage recipes and avant-garde gastronomy, the story of Bistro is one of relentless pursuit. Growing up in a family where recipes were cherished heirlooms, Chef X's fascination with flavors was ignited early on. However, it was his journey through culinary school and subsequent years of honing his craft in Michelin-starred kitchens that truly shaped his artistry.
+				</p>
+
+
+				<p>Bistro was conceived as a tribute to his roots, a place where treasured family recipes harmonize with his modern take on cuisine. The restaurant's cozy atmosphere is an extension of Chef X's philosophy – every meal should be an experience that engages the senses and creates lasting memories.
+				</p>
+
+				<p>But the journey wasn't without challenges. The path from a culinary dreamer to a restaurant owner was paved with sacrifices and sleepless nights. Yet, Chef X's unwavering commitment and his team's dedication led to the grand opening of Bistro.
+				</p>
+
+				<p>Today, the restaurant stands as a testament to the power of culinary passion. From the inviting aroma of dishes that pay homage to his grandmother's kitchen, to the innovative fusion creations that push culinary boundaries, Bistro is more than just a dining establishment; it's a narrative of one chef's odyssey to encapsulate flavors, emotions, and his heritage on a plate.
+				</p>
+					
+				<p>Join us at Bistro and become part of the story – where every bite tells a tale of tradition, innovation, and an insatiable love for food.</p>					
+					
+			</div>
+
+			<div>
+				<script type="text/javascript">
+					function toggle(elementId) {
+						var element = document.getElementById(elementId);
+						if (element.style.display === "none") {
+							element.style.display = "block";
+						} else {
+							element.style.display = "none";
+						}
+					}
+				</script>
+				<div id="cFrame">
+					<div onclick="toggle('cChatbotFrame-WilliamGrayInfo')" style="background-color: rgb(63, 114, 175); width: 100%; max-width:600px; height: 50px; border-radius: 10px 10px 0 0; text-align: right;">
+						<button id="cCloseButton" class="bg-transparent text-white font-bold py-2 px-4 rounded">x</button>
+					</div>
+					<iframe id="cChatbotFrame-WilliamGrayInfo" style="border-radius: 0 0 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://chatbot-v1-beta.vercel.app/"></iframe>	
+				</div>
+			</div>
+
 		</div>
-		<br><br>
+
+		
+
 	</body>
 </html>
