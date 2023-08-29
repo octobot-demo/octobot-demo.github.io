@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		
 		<style>
-			/* body, html {
-				height: 100%;
-				overflow: hidden;
-			} */
+
+			body {
+				background-color: aliceblue;
+			}
+
+			#cFrame {
+				max-width: 600px;
+				width: 100%;
+				position: fixed;
+				bottom: 10px;
+				right: 3%;
+				box-shadow: 0px 0px 20px rgb(150, 150, 150);
+				border-radius: 10px 10px 10px 10px;
+			}
+
+			#cCloseButton {
+				margin: 5px;
+			}
+
 		</style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 	</head>
 	<body>
 
-<!-- 
-		<script>
-			let isUserScrolling = false;
-		
-			const scrollContainer = document.getElementById('scrollContainer');
-		
-			// Function to handle the scroll event
-			function handleScroll(event) {
-				if (isUserScrolling) {
-				// Allow scrolling for user-triggered events
-				isUserScrolling = false; // Reset flag
-				} else {
-				// Disable autoscrolling
-				event.preventDefault();
-				event.stopPropagation();
-				scrollContainer.scrollTop = 0; // Prevent autoscrolling by resetting scroll position
-				}
-			}
-		
-			// Attach event listener to the scroll container
-			scrollContainer.addEventListener('scroll', handleScroll);
-		
-			// Detect user-initiated scroll
-			scrollContainer.addEventListener('wheel', function(event) {
-				isUserScrolling = true;
-			});
-		</script> -->
+		<h1>Hotel</h1>
 
 		<div>
-			<!-- <script type="text/javascript">
+			<script type="text/javascript">
 				function toggle(elementId) {
 					var element = document.getElementById(elementId);
 					if (element.style.display === "none") {
@@ -49,10 +45,12 @@
 					}
 				}
 			</script>
-			<div style="background-color: rgb(63, 114, 175); width: 100%; max-width:600px; height: 40px; border-radius: 10px 10px 0 0; text-align: right;">
-				<button style="padding: 5px; background-color: rgb(230, 230, 230); border-radius: 5px; margin: 5px;" onclick="toggle('cChatbotFrame-WilliamGrayInfo')">x</button>
-			</div> -->
-			<iframe id="cChatbotFrame-WilliamGrayInfo" style="border-radius: 10px 10px 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://chatbot-v1-beta.vercel.app/no-scroll-william-gray-info"></iframe>
+			<div id="cFrame">
+				<div onclick="toggle('cChatbotFrame-WilliamGrayInfo')" style="background-color: rgb(63, 114, 175); width: 100%; max-width:600px; height: 50px; border-radius: 10px 10px 0 0; text-align: right;">
+					<button id="cCloseButton" class="bg-slate-200 hover:bg-white text-blue font-bold py-2 px-4 rounded">x</button>
+				</div>
+				<iframe id="cChatbotFrame-WilliamGrayInfo" style="border-radius: 0 0 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://chatbot-v1-beta.vercel.app/"></iframe>	
+			</div>
 		</div>
 		<br><br>
 	</body>
