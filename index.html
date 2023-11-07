@@ -109,7 +109,37 @@
 			<div>
 
 					<script src="https://cdn.tailwindcss.com"></script>
-					<style link="https://raw.githubusercontent.com/octobot-demo/static-files/main/h3/iframe/css/main.css"></style>
+					<!-- <style link="https://raw.githubusercontent.com/octobot-demo/static-files/main/h3/iframe/css/main.css"></style> -->
+
+					<style>
+						#cFrame {
+						max-width: 600px;
+						width: 100%;
+						position: fixed;
+						display: none;
+						bottom: 20px;
+						right: 3%;
+						box-shadow: 0px 0px 25px rgb(100, 100, 100);
+						border-radius: 10px 10px 10px 10px;
+						}
+
+						#cCloseButton {
+						margin: 5px;
+						}
+
+						#cIcon {
+						position: fixed;
+						bottom: 30px;
+						right: 30px;
+						height: 100px;
+						width: 100px;
+						display: block;
+						border-radius: 15px;
+						box-shadow: 0px 0px 25px rgb(100, 100, 100);
+						background-color: white;
+
+						}
+					</style>
 
 					<script type="text/javascript">
 						function toggle(elementId, iconId) {
@@ -132,7 +162,7 @@
 						<iframe id="cChatbotFrame-WilliamGrayInfo" style="border-radius: 0 0 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://chatbot-v1-beta.vercel.app/h3"></iframe>	
 					</div>
 
-					<img id="cIcon" src="https://raw.githubusercontent.com/octobot-demo/static-files/main/image_2023-09-12_163333354.png" onclick="toggle('cFrame', 'cIcon')">
+					<img id="cIcon" src="https://raw.githubusercontent.com/octobot-demo/static-files/main/logo%20h3%20octobot.png" onclick="toggle('cFrame', 'cIcon')">
 
 				</div>
 
