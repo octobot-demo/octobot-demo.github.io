@@ -1,0 +1,65 @@
+<!--Start of code to copy  -->
+<div id="cFrameContainer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        #cFrameContainer {
+            z-index: 9999;
+        }
+
+        #cFrame {
+        max-width: 600px;
+        width: 100%;
+        position: fixed;
+        display: none;
+        bottom: 20px;
+        right: 3%;
+        box-shadow: 0px 0px 25px rgb(100, 100, 100);
+        border-radius: 10px 10px 10px 10px;
+        }
+
+        #cCloseButton {
+        margin: 5px;
+        }
+
+        #cIcon {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        height: 100px;
+        width: 100px;
+        display: block;
+        border-radius: 15px;
+        box-shadow: 0px 0px 25px rgb(100, 100, 100);
+        background-color: white;
+
+        }
+    </style>
+
+    <script type="text/javascript">
+        function toggle(elementId, iconId) {
+            var element = document.getElementById(elementId);
+            var iconElement = document.getElementById(iconId)
+            if (iconElement.style.display === "none") {
+                element.style.display = "none";
+                iconElement.style.display = "block";
+
+            } else {
+                element.style.display = "block";
+                iconElement.style.display="none";
+            }
+        }
+    </script>
+    <div id="cFrame">
+        <div onclick="toggle('cFrame', 'cIcon')" style="background-color: rgb(20, 70, 72); width: 100%; max-width:600px; height: 50px; border-radius: 10px 10px 0 0; text-align: right;">
+            <button id="cCloseButton" class="bg-transparent text-white font-bold py-2 px-4 rounded">x</button>
+        </div>
+        <iframe id="cChatbotFrame-WilliamGrayInfo" style="border-radius: 0 0 10px 10px; border-width: 0px; display: block; width: 100%; max-width: 600px;" height="500" src="https://octobot-dev.vercel.app/h3_v2"></iframe>	
+    </div>
+
+    <img id="cIcon" src="https://raw.githubusercontent.com/octobot-demo/static-files/main/logo%20h3%20octobot.png" onclick="toggle('cFrame', 'cIcon')">
+
+</div>
+<!-- End of code to copy -->

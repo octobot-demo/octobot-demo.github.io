@@ -106,12 +106,17 @@
 
 
 			<!--Start of code to copy  -->
-			<div>
+			<div id="cFrameContainer">
 
 					<script src="https://cdn.tailwindcss.com"></script>
 					<!-- <style link="https://raw.githubusercontent.com/octobot-demo/static-files/main/h3/iframe/css/main.css"></style> -->
 
 					<style>
+
+						#cFrameContainer {
+							z-index: 9999;
+						}
+
 						#cFrame {
 						max-width: 600px;
 						width: 100%;
@@ -165,9 +170,9 @@
 					<img id="cIcon" src="https://raw.githubusercontent.com/octobot-demo/static-files/main/logo%20h3%20octobot.png" onclick="toggle('cFrame', 'cIcon')">
 
 				</div>
+				<!-- End of code to copy -->
 
 			</div>
-			<!-- End of code to copy -->
 
 		
 
